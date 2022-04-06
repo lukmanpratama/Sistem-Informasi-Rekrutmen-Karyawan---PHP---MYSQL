@@ -55,6 +55,12 @@
                     </div>
                 </div>
                 <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Persyaratan</label>
+                    <div class="col-sm-6">
+                    <textarea class="form-control" id="inputPassword" rows="15" readonly><?php echo $data_cek['persyaratan']; ?></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
                     <label for="inputPassword" class="col-sm-2 col-form-label">Tanggal Post</label>
                     <div class="col-sm-4">
                     <input type="text" class="form-control" id="inputPassword" value="<?php echo date('d F Y', strtotime($data_cek['tgl_post'])); ?>" readonly>
