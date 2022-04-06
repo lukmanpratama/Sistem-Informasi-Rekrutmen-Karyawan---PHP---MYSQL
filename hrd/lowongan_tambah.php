@@ -45,6 +45,12 @@
                     <textarea class="form-control" name="txtdeskripsi" id="inputPassword" rows="5" placeholder="Masukkan Deskripsi Lowongan" required></textarea>
                     </div>
                 </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Persyaratan</label>
+                    <div class="col-sm-6">
+                    <textarea class="form-control" name="txtpersyatan" id="inputPassword" rows="15" placeholder="Masukkan Persyaratan Lowongan" required></textarea>
+                    </div>
+                </div>
                     <input type="hidden" name="txtpost" value="<?php echo date('Y-m-d'); ?>" class="form-control" id="inputPassword">
                 <div class="form-group row">
                     <label for="inputPassword" class="col-sm-2 col-form-label">Tanggal Deadline</label>
