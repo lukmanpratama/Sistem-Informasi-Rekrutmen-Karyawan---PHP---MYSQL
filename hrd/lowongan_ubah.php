@@ -55,6 +55,12 @@ if (isset($_GET['kode'])) {
                                 </div>
                             </div>
                             <div class="form-group row">
+                                <label for="inputPassword" class="col-sm-2 col-form-label">Persyaratan</label>
+                                <div class="col-sm-6">
+                                    <textarea class="form-control" name="txtdeskripsi" id="inputPassword" rows="15" placeholder="Masukkan Persyaratan Lowongan" required><?php echo $data_cek['persyaratan']; ?></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
                                 <label for="inputPassword" class="col-sm-2 col-form-label">Tanggal Deadline</label>
                                 <div class="col-sm-2">
                                     <input type="date" name="txtdeadline" class="form-control" id="inputPassword" value="<?php echo $data_cek['tgl_deadline']; ?>">
