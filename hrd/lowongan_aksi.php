@@ -1,10 +1,11 @@
 <?php
     if (isset ($_POST['btnSIMPAN'])){
         //mulai proses simpan
-        $sql_simpan = "INSERT INTO lowongans (nama_lowongan,kategori,deskripsi,tgl_post,tgl_deadline) VALUES (
+        $sql_simpan = "INSERT INTO lowongans (nama_lowongan,kategori,deskripsi,persyaratan,tgl_post,tgl_deadline) VALUES (
             '".$_POST['txtnama']."',
             '".$_POST['txtkategori']."',
             '".$_POST['txtdeskripsi']."',
+            '".$_POST['txtpersyaratan']."',
             '".$_POST['txtpost']."',
             '".$_POST['txtdeadline']."')";
         $query_simpan = mysqli_query($koneksi, $sql_simpan);
@@ -22,6 +23,7 @@
             nama_lowongan='".$_POST['txtnama']."',
             kategori='".$_POST['txtkategori']."',
             deskripsi='".$_POST['txtdeskripsi']."',
+            persyaratan='".$_POST['txtpersyaratan']."',
             tgl_deadline='".$_POST['txtdeadline']."'
             WHERE id_lowongan='".$_POST['txtid']."'";
         $query_ubah = mysqli_query($koneksi, $sql_ubah);
